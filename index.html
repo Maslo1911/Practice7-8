@@ -3,65 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семестровая работа</title>
 </head>
 <body>
-<header>
-    Хэдер
+<div class="page-container">
+    <header><h2>Главная</h2></header>
     <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="src/news.html">Новости</a></li>
-            <li><a href="src/practices.html">Практики</a></li>
-            <li><a href="src/goods.html">Товары</a></li>
-            <li><a href="src/contacts.html">Контакты</a></li>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/news.html">Новости</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/practices.html">Практики</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/goods.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link" href="src/contacts.html">Контакты</a></li>
         </ul>
     </nav>
-</header>
-<div id="content">
-    <h2>Информация об авторе</h2>
-    <img src="assets/image1.jpg" alt="Фото автора" width="20%" height="20%">
-    <p>Маслов Максим Юрьевич</p>
-    <p>ЭФБО-05-24</p>
-    <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано
-        ударила в голову. В четыре активно ругался.
-        Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в
-        раздевалке.</p>
-    <div>
-        <h3>Навык 1</h3>
-        <p>Умею летать в рокет лиге</p>
-    </div>
-    <div>
-        <h3>Навык 2</h3>
-        <p>Терпимо отношусь к ру репу(сложный навык)</p>
-    </div>
-    <div>
-        <h3>Навык 3</h3>
-        <p>Когда в потоке, могу программировать</p>
-    </div>
-    <div>
-        <h3>Навык 4</h3>
-        <p>Умею общаться с женщинами(нет)</p>
-    </div>
-    <div>
-        <h2>Мой опыт работы:</h2>
-        <div>
-            <h3>Опыт 1</h3>
-            10 класс. <a href="https://github.com/Maslo1911/polygons">Программа "Многоугольники"</a>
+    <main class="content">
+        <div class="profile-header">
+            <h1 class="profile-title">Информация об авторе</h1>
+            <img class="profile-photo" src="assets/image1.jpg" alt="Фото автора">
+            <h2 class="profile-name">Маслов Максим Юрьевич</h2>
+            <p class="profile-group">ЭФБО-05-24</p>
         </div>
-        <div>
-            <h3>Опыт 2</h3>
-            10 класс. <a href="https://github.com/Utochka416/AstroPortal">Веб-приложение "АстроПортал"</a>
+
+        <div class="about-me">
+            <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову. В четыре активно ругался.
+                Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в раздевалке.</p>
         </div>
-        <div>
-            <h3>Опыт 3</h3>
-            Первая курсовая работа. <a href="https://github.com/Maslo1911/DataGraph">Программа для создания и редоктирование графика "DataGraph"</a>
+        <div class="skills-section">
+            <h2 class="section-title">Навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">
+                    <p class="skill-desc">Умею летать в рокет лиге</p>
+                </div>
+                <div class="skill-tag">
+                    <p class="skill-desc">Терпимо отношусь к ру репу (сложный навык)</p>
+                </div>
+                <div class="skill-tag">
+                    <p class="skill-desc">Когда в потоке, могу программировать</p>
+                </div>
+                <div class="skill-tag">
+                    <p class="skill-desc">Умею общаться с женщинами (нет)</p>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="experience-section">
+            <h2 class="section-title">Мой опыт работы</h2>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <h3 class="experience-title">Программа "Многоугольники"</h3>
+                    <p class="experience-desc">10 класс. Программа для отрисовки разных фигур на Windows Forms</p>
+                    <a href="https://github.com/Maslo1911/polygons" class="experience-link">Программа "Многоугольники"</a>
+                </article>
+                <article class="experience-card">
+                    <h3 class="experience-title">Веб-приложение "АстроПортал"</h3>
+                    <p class="experience-desc">Проектная работа в 10 классе. Программа предназначена для интерактивного моделирования актуальной обстановки в околоземном космическом пространстве на основе обновляемых баз данных орбитальных элементов.</p>
+                    <a href="https://github.com/Utochka416/AstroPortal" class="experience-link">Веб-приложение "АстроПортал"</a>
+                </article>
+                <article class="experience-card">
+                    <h3 class="experience-title">Первая курсовая работа</h3>
+                    <p class="experience-desc">Тема работы:	Разработка программного продукта - Программа для создания и редактирования графиков</p>
+                    <a href="https://github.com/Maslo1911/DataGraph" class="experience-link">Программа для создания и редактирование графика "DataGraph"</a>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Главная. Все права защищены.</p>
+    </footer>
 </div>
-<footer>
-    <p>Футер</p>
-</footer>
 </body>
 </html>
