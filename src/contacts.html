@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
 </head>
 <body>
-<header>
-    Хэдер
+<div class="page-container">
+    <header>Хэдер</header>
     <nav>
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+            <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+            <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
-</header>
-<div id="content">
-    <h1>Контакты</h1>
+    <main class="content">
+        <h1>Контакты</h1>
 
-    <div class="contact-info">
-        <h2>Адрес электронной почты:</h2>
-        <p>maslov@student.mirea.ru</p>
+        <div class="contact-info">
+            <h2>Адрес электронной почты:</h2>
+            <p>maslov@student.mirea.ru</p>
 
-        <h2>Адрес:</h2>
-        <p>г. Москва, пр-т Вернадского, д. 78</p>
+            <h2>Адрес:</h2>
+            <p>г. Москва, пр-т Вернадского, д. 78</p>
 
-        <h2>Телефон:</h2>
-        <p>+7 (495) 123-45-67</p>
+            <h2>Телефон:</h2>
+            <p>+7 (495) 123-45-67</p>
 
-        <button onclick="callMe()">Позвоните мне</button>
-    </div>
+            <button onclick="callMe()">Позвоните мне</button>
+        </div>
+    </main>
+    <footer>
+        <p>Футер</p>
+    </footer>
 </div>
-<footer>
-    <p>Футер</p>
-</footer>
-
 <script>
     function callMe() {
         alert('Спасибо! Мы перезвоним вам в ближайшее время по номеру +7 (495) 123-45-67');
