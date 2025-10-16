@@ -93,7 +93,6 @@ nav {
 }
 
 .profile-photo {
-    width: 300px;
     height: 300px;
     border-radius: 15px;
     object-fit: cover;
@@ -135,6 +134,8 @@ nav {
 }
 
 .skill-tag {
+    display: grid;
+    place-items: center;
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     color: white;
     padding: 12px 25px;
@@ -144,11 +145,18 @@ nav {
     box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
     transition: all 0.3s ease;
     text-align: center;
+
 }
 
 .skill-tag:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+}
+
+.skill-desc {
+    color: white;
+    line-height: 1.6;
+    margin: 0 auto;
 }
 
 /* ===== ОПЫТ РАБОТЫ ===== */
@@ -195,6 +203,15 @@ nav {
     color: #7f8c8d;
     line-height: 1.6;
     margin: 0;
+}
+
+.experience-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.3s ease;
 }
 
 /* ===== НОВОСТИ ===== */
@@ -252,7 +269,6 @@ nav {
 }
 
 .product-image {
-    width: 200px;
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
